@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <title>Quiz 2 - FootballPlayerQuiz</title>
+  <meta charset="utf-8">
+  <style>
+  ul{
+    list-style: none;
+    padding-left: 0px;
+  }
+  </style>
+  <script language="JavaScript">
+  function confirmAnswer(){
+    if(document.fm.Answer.value=="rooney"){
+      alert("Correct!")
+      window.location.href="q3.html"
+    }
+    else{
+      alert("Discorrect!")
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <br>
+  <center>
+    <h1>FootballPlayerQuiz</h1>
+    <br>
+    <h3>Level 2</h3>
+    <br>
+    <p>
+      <ul>
+        <li>Everton (2002~2004)</li>
+        <li>Manchester United (2004~2017)</li>
+        <li>Everton (2017~)</li>
+      </ul>
+    </p>
+    <br>
+    <p>
+      <form name="fm">Answer(6):
+        <input type="text" name="Answer"/>
+        <input type="button" name="Enter" onclick="confirmAnswer()" style="width:50pt;height:30pt" value="Enter"/>
+      </form>
+    </p>
+  </center>
+</body>

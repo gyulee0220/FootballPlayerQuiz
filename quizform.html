@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <title>Quiz X - FootballPlayerQuiz</title>
+  <meta charset="utf-8">
+  <style>
+  ul{
+    list-style: none;
+    padding-left: 0px;
+  }
+  </style>
+  <script language="JavaScript">
+  function confirmAnswer(){
+    if(document.fm.Answer.value=="정답 작성 할 것"){
+      alert("Correct!")
+      window.location.href="q/*다음 번호 작성*/.html"
+    }
+    else{
+      alert("Discorrect!")
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <br>
+  <center>
+    <h1>FootballPlayerQuiz</h1>
+    <br>
+    <h3>Level X</h3>
+    <br>
+    <p>
+      <ul>
+        <li>팀 1 (2002~2003)</li>
+        <li>팀 2 (2003~2009)</li>
+      </ul>
+    </p>
+    <br>
+    <p>
+      <form name="fm">Answer(X):
+        <input type="text" name="Answer"/>
+        <input type="button" name="Enter" onclick="confirmAnswer()" style="width:50pt;height:30pt" value="Enter"/>
+      </form>
+    </p>
+  </center>
+</body>

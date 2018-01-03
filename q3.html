@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <title>Quiz 3 - FootballPlayerQuiz</title>
+  <meta charset="utf-8">
+  <style>
+  ul{
+    list-style: none;
+    padding-left: 0px;
+  }
+  </style>
+  <script language="JavaScript">
+  function confirmAnswer(){
+    if(document.fm.Answer.value=="aguero"){
+      alert("Correct!")
+      window.location.href="q4.html"
+    }
+    else{
+      alert("Discorrect!")
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <br>
+  <center>
+    <h1>FootballPlayerQuiz</h1>
+    <br>
+    <h3>Level 3</h3>
+    <br>
+    <p>
+      <ul>
+        <li>Independiente (2003~2006)</li>
+        <li>Atletico Madrid (2006~2011)</li>
+        <li>Manchester City (2011~)</li>
+      </ul>
+    </p>
+    <br>
+    <p>
+      <form name="fm">Answer(6):
+        <input type="text" name="Answer"/>
+        <input type="button" name="Enter" onclick="confirmAnswer()" style="width:50pt;height:30pt" value="Enter"/>
+      </form>
+    </p>
+  </center>
+</body>

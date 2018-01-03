@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <title>Quiz 1 - FootballPlayerQuiz</title>
+  <meta charset="utf-8">
+  <style>
+  ul{
+    list-style: none;
+    padding-left: 0px;
+  }
+  </style>
+  <script language="JavaScript">
+  function confirmAnswer(){
+    if(document.fm.Answer.value=="ronaldo"){
+      alert("Correct!")
+      window.location.href="q2.html"
+    }
+    else{
+      alert("Discorrect!")
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <br>
+  <center>
+    <h1>FootballPlayerQuiz</h1>
+    <br>
+    <h3>Level 1</h3>
+    <br>
+    <p>
+      <ul>
+        <li>Sporting CP (2002~2003)</li>
+        <li>Manchester United (2003~2009)</li>
+        <li>Real Madrid (2009~)</li>
+      </ul>
+    </p>
+    <br>
+    <p>
+      <form name="fm">Answer(7):
+        <input type="text" name="Answer"/>
+        <input type="button" name="Enter" onclick="confirmAnswer()" style="width:50pt;height:30pt" value="Enter"/>
+      </form>
+    </p>
+  </center>
+</body>
