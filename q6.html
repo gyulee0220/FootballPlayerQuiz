@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Quiz 1 - FootballPlayerQuiz</title>
+  <title>Quiz 6 - FootballPlayerQuiz</title>
   <meta charset="utf-8">
   <style>
   ul{
@@ -10,16 +10,16 @@
   </style>
   <script language="JavaScript">
   function confirmAnswer(){
-    if(document.fm.Answer.value=="ronaldo"){
+    if(document.fm.Answer.value=="ozil"){
       alert("Correct!")
-      window.location.href="q2.html"
+      window.location.href="q7.html"
     }
     else{
       alert("Discorrect!")
     }
   }
   function showHint(){
-    alert("5 Ballon d'Or Awards")
+    alert("German Maestro")
   }
   </script>
 </head>
@@ -29,18 +29,19 @@
   <center>
     <h1>FootballPlayerQuiz</h1>
     <br>
-    <h3>Level 1</h3>
+    <h3>Level 6</h3>
     <br>
     <p>
       <ul>
-        <li>Sporting CP (2002~2003)</li>
-        <li>Manchester United (2003~2009)</li>
-        <li>Real Madrid (2009~)</li>
+        <li>Schalke 04 (2006~2008)</li>
+        <li>Werder Bremen (2008~2010)</li>
+        <li>Real Madrid (2010~2013)</li>
+        <li>Arsenal (2013~)</li>
       </ul>
     </p>
     <br>
     <p>
-      <form name="fm">Answer(7):
+      <form name="fm">Answer(4):
         <input type="text" name="Answer"/>
         <input type="button" name="Enter" onclick="confirmAnswer()" style="width:50pt;height:30pt" value="Enter"/><br><br>
         <input type="button" name="Hint" onclick="showHint()" style="width:40pt;height:20pt" value="Hint"/>
